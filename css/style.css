@@ -37,6 +37,7 @@ body {
 }
 
 .menu li {
+  position: relative;
   list-style: none;
 }
 
@@ -48,4 +49,36 @@ body {
 
 .menu li a:hover {
   background-color: #aa1cff;
+}
+
+.menu li:hover > .submenu {
+  display: block;
+  position: absolute;
+  top: 35px;
+  left: 0;
+  background-color: #aa1cff;
+}
+
+.submenu {
+  display: none;
+}
+
+.submenu li {
+  border: 1px solid #111;
+  padding: 17px;
+}
+
+.submenu li:hover {
+  border: 1px solid #111;
+  padding: 17px;
+  background-color: #ddd;
+}
+
+.submenu li a {
+  width: 100%;
+}
+
+.submenu li a:hover {
+  color: #111;
+  background-color: #ddd;
 }
